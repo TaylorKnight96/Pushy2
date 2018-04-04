@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pushy</string>
+    <string name="textRegister">Not a member? Sign up!</string>
+    <string name="textUsername">Username</string>
+    <string name="textLogin">Log in</string>
+    <string name="textPassword">Password</string>
+
+</resources>
