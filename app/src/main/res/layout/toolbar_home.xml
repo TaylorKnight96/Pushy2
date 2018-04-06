@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    tools:showIn="@layout/activity_home">
+
+    <com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:backgroundMenuColor="@color/colorPrimary"
+        app:backgroundNotifications="@color/colorAccent"
+        app:icon_height="40dp"
+        app:icon_width="40dp"
+        app:item_backgroundColor="@color/colorPrimary"
+        app:item_colorSelected="@color/colorAccent"
+        app:item_marginBottom="4dp"
+        app:item_marginLeft="4dp"
+        app:item_marginRight="4dp"
+        app:item_marginTop="4dp"
+        app:item_textColor="@color/colorSecondary"
+        app:item_textSize="5sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtText"
+        android:layout_centerInParent="true"
+        android:textSize="50sp"
+        />
+
+
+</RelativeLayout>
+
+
+
