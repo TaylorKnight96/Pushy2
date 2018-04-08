@@ -21,8 +21,12 @@
         <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme"></activity>
-        <activity android:name=".ProjectActivity"></activity>
+            android:theme="@style/AppTheme" />
+
+        <activity android:name=".ProjectActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".ChartsActivity" />
+
     </application>
 
 </manifest>
