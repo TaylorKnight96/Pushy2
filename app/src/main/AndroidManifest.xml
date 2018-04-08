@@ -27,6 +27,13 @@
         <activity android:name=".SettingsActivity" />
         <activity android:name=".ChartsActivity" />
 
+=======<activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme">
+
+    </activity>
+>>>>>>> ac7c1274a28de1892ce8b5c6108b821d9ec36e4e
     </application>
 
 </manifest>
