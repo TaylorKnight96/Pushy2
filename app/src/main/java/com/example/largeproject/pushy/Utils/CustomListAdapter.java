@@ -1,4 +1,4 @@
-package com.example.largeproject.pushy;
+package com.example.largeproject.pushy.Utils;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.example.largeproject.pushy.R;
 import com.example.largeproject.pushy.Utils.Project;
 
 import java.util.ArrayList;

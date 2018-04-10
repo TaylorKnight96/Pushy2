@@ -1,55 +1,40 @@
-package com.example.largeproject.pushy;
+package com.example.largeproject.pushy.Charts;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.TextView;
-import android.widget.Toast;
-import android.content.Intent;
+import android.widget.ListView;
 
+import com.example.largeproject.pushy.R;
 import com.example.largeproject.pushy.Utils.BottomNavigationViewHelper;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
-public class HomeActivity extends AppCompatActivity {
-    private static final String TAG = "HomeActivity";
+public class ChartsActivity extends AppCompatActivity {
 
-    private static final int ACTIVITY_NUM = 0;
-    TextView txtView;
+    private static final String TAG = "ChartsActivity";
+    private static final int ACTIVITY_NUM = 2;
+    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        Log.d(TAG, "onCreate: starting");
 
         setupBottomNavigationView();
 
-        /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        }); */
     }
-
 
     private void setupBottomNavigationView()
     {
         Log.d(TAG, "setupBottomNavigationView: setting up BottomNavigationBar");
         BottomNavigationViewEx bottomNavigationViewEx = (BottomNavigationViewEx) findViewById(R.id.bottomNavViewBar);
         BottomNavigationViewHelper.setupBottomNavigationView(bottomNavigationViewEx);
-        BottomNavigationViewHelper.enableNavigation(HomeActivity.this, bottomNavigationViewEx);
+        BottomNavigationViewHelper.enableNavigation(ChartsActivity.this, bottomNavigationViewEx);
         Menu menu = bottomNavigationViewEx.getMenu();
-        MenuItem menuItem = menu.getItem(ACTIVITY_NUM);
+        android.view.MenuItem menuItem = menu.getItem(ACTIVITY_NUM);
         menuItem.setChecked(true);
-
-
-
-
-
     }
 
 }

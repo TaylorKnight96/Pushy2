@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".Home.HomeActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/topToolBar">
-            <include layout="@layout/top_tabs"/>
+            <include layout="@layout/layout_top_bar"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -22,10 +22,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/middleView"
             android:layout_below="@+id/topToolBar">
-            <include layout="@layout/center_viewpage"/>
+            <include layout="@layout/layout_center_viewpage"/>
         </RelativeLayout>
 
-        <include layout="@layout/bottom_navigation_view"/>
+        <include layout="@layout/layout_bottom_navigation_view"/>
 
     </RelativeLayout>
 

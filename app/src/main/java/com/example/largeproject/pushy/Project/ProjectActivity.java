@@ -1,11 +1,14 @@
-package com.example.largeproject.pushy;
+package com.example.largeproject.pushy.Project;
 
 import android.os.Bundle;
-import android.support.v4.view.MenuItemCompat;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.ListView;
 import android.view.Menu;
+
+import com.example.largeproject.pushy.R;
 import com.example.largeproject.pushy.Utils.BottomNavigationViewHelper;
 import com.example.largeproject.pushy.Utils.Project;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
@@ -26,18 +29,33 @@ public class ProjectActivity extends AppCompatActivity {
 
         listView = (ListView) findViewById(R.id.projectListView);
 
-        ArrayList<Project> projects = new ArrayList<>();
-        projects.add(new Project("OOP", "#63bb91"));
-        projects.add(new Project("CS2", "#63bb91"));
-        projects.add(new Project("OS", "#63bb91"));
-        projects.add(new Project("Discrete", "#63bb91"));
-
         //CustomListAdapter adapter = new CustomListAdapter(this, R.layout.activity_project_card, projects);
         //listView.setAdapter(adapter);
 
         setupBottomNavigationView();
+        setupViewPager();
 
     }
+
+    private void setupViewPager()
+    {
+        SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(new BackFragment());
+        adapter.addFragment(new NameFragment());
+        adapter.addFragment(new AddFragment());
+        ViewPager viewPager = (ViewPager) findViewById(R.id.container);
+        viewPager.setAdapter(adapter);
+
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager);
+        //tabLayout.getTabAt(0).setIcon(R.drawable.ic_back);
+        tabLayout.getTabAt(1).setText("Projects");
+        tabLayout.getTabAt(2).setIcon(R.drawable.ic_add);
+
+    }
+
+
+    //Bottom navigation bar setup
     private void setupBottomNavigationView()
     {
         Log.d(TAG, "setupBottomNavigationView: setting up BottomNavigationBar");

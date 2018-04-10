@@ -1,14 +1,14 @@
-package com.example.largeproject.pushy;
+package com.example.largeproject.pushy.Settings;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.widget.ListView;
+
+import com.example.largeproject.pushy.R;
 import com.example.largeproject.pushy.Utils.BottomNavigationViewHelper;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
-
-import java.util.ArrayList;
 
 public class SettingsActivity extends AppCompatActivity {
 

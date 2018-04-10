@@ -7,11 +7,11 @@ import android.support.design.widget.BottomNavigationView;
 import android.util.Log;
 import android.view.MenuItem;
 
-import com.example.largeproject.pushy.ChartsActivity;
-import com.example.largeproject.pushy.HomeActivity;
-import com.example.largeproject.pushy.ProjectActivity;
+import com.example.largeproject.pushy.Charts.ChartsActivity;
+import com.example.largeproject.pushy.Home.HomeActivity;
+import com.example.largeproject.pushy.Project.ProjectActivity;
 import com.example.largeproject.pushy.R;
-import com.example.largeproject.pushy.SettingsActivity;
+import com.example.largeproject.pushy.Settings.SettingsActivity;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 public class BottomNavigationViewHelper {

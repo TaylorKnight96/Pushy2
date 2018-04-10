@@ -19,13 +19,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HomeActivity"
+            android:name=".Home.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme" />
 
-        <activity android:name=".ProjectActivity" />
-        <activity android:name=".SettingsActivity" />
-        <activity android:name=".ChartsActivity" />
+        <activity android:name=".Project.ProjectActivity" />
+        <activity android:name=".Settings.SettingsActivity" />
+        <activity android:name=".Charts.ChartsActivity" />
 
 =======<activity
             android:name=".Register"
